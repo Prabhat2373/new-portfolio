@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #090d16;
+    --bg-secondary: #0f172a;
+    --card-bg: rgba(15, 23, 42, 0.75);
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.15);
+  }
+
+  html.light {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --border-subtle: rgba(0, 0, 0, 0.1);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent: #0f172a;
+    --accent-glow: rgba(15, 23, 42, 0.08);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* ----------------------------------------------------
+   LIGHT MODE: HIGH-CONTRAST DARK ACCENT PALETTE OVERRIDES
+   Replace light/washed-out blues with dark slate/charcoal (#0f172a / #1e293b)
+---------------------------------------------------- */
+
+html.light .bg-\[\#090d16\] {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-\[\#0b101d\] {
+  background-color: #ffffff !important;
+}
+
+/* Typography contrast */
+html.light .text-slate-100,
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+/* Card and surface background */
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Borders */
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-white\/15,
+html.light .border-white\/20 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* ====================================================
+   REPLACE CYAN/LIGHT-BLUE WITH CRISP DARK CHARCOAL/INDIGO ACCENTS
+==================================================== */
+
+/* Replace light cyan pills with sharp dark slate badge */
+html.light .bg-cyan-500\/10,
+html.light .bg-cyan-500\/20 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Replace cyan text colors with solid dark text in light mode */
+html.light .text-cyan-400,
+html.light .text-cyan-300 {
+  color: #0f172a !important;
+}
+
+/* Primary CTA Buttons (was cyan-500) -> Solid Dark Charcoal with White text in light mode */
+html.light .bg-cyan-500 {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px 0 rgba(15, 23, 42, 0.25) !important;
+}
+
+html.light .bg-cyan-500:hover,
+html.light .hover\:bg-cyan-400:hover {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+}
+
+html.light .text-slate-950 {
+  color: #ffffff !important;
+}
+
+/* Replace Hero gradient with dark slate gradient */
+html.light .from-cyan-400.via-sky-300.to-indigo-400 {
+  --tw-gradient-from: #0f172a var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #334155 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #1e293b var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+/* Border hovers */
+html.light .hover\:border-cyan-500\/40:hover {
+  border-color: #0f172a !important;
+}
+
+/* Timeline dot indicator */
+html.light .border-cyan-400 {
+  border-color: #0f172a !important;
+}
+
+html.light .group-hover\:bg-cyan-400:hover,
+html.light .group:hover .border-cyan-400 {
+  background-color: #0f172a !important;
+}
+
+/* Maintain dark syntax-highlighted code terminal in both themes */
+html.light .code-terminal-container {
+  background-color: #0a0e17 !important;
+  border-color: #1e293b !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2) !important;
+}
+html.light .code-terminal-container .text-white {
+  color: #f8fafc !important;
+}
+html.light .code-terminal-container .text-slate-300 {
+  color: #cbd5e1 !important;
+}
+html.light .code-terminal-container .text-slate-400 {
+  color: #94a3b8 !important;
+}
+html.light .code-terminal-container .bg-slate-900\/90,
+html.light .code-terminal-container .bg-slate-900\/60 {
+  background-color: #111827 !important;
+}
+html.light .code-terminal-container .bg-slate-950 {
+  background-color: #030712 !important;
+}
+html.light .code-terminal-container .border-white\/10,
+html.light .code-terminal-container .border-white\/5 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+html.light .code-terminal-container .text-cyan-300,
+html.light .code-terminal-container .text-cyan-400 {
+  color: #38bdf8 !important;
+}
+
+/* Ambient light adjustment */
+html.light .ambient-glow {
+  opacity: 0.15 !important;
+}
+
+.code-font {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
