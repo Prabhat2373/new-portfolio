@@ -1,69 +1,67 @@
-'use client';
-
 import React from 'react';
-import { Network, Database, Cpu, ArrowRight, ShieldCheck, Zap } from 'lucide-react';
+import { Layers, Zap, Bot, ChevronRight } from 'lucide-react';
 
 export const SystemArchitecture = () => {
   return (
-    <section id="architecture" className="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
-      <div className="text-center max-w-2xl mx-auto mb-16">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono mb-3">
-          Core Engineering Philosophy
+    <section id="architecture" className="section-deferred py-24 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 text-xs font-medium mb-4">
+          Architectural Philosophy
         </div>
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          How I Design For Resilience & Scale
+        <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 dark:text-white">
+          Simplicity is the ultimate sophistication.
         </h2>
-        <p className="text-sm text-slate-400 mt-3 leading-relaxed">
-          Big Tech systems require more than writing code—they demand thoughtful tradeoffs between consistency, availability, latency, and operational simplicity.
+        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mt-4 leading-relaxed font-normal">
+          How I engineer cloud frontends that run effortlessly for years: zero maintenance, profound speed, and unyielding reliability.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Card 1: Edge & Concurrency */}
-        <div className="p-6 rounded-2xl bg-slate-900/60 border border-white/10 hover:border-cyan-500/40 backdrop-blur-md transition-all">
-          <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5">
-            <Network className="w-5 h-5" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Card 1: Cloud & Multi-Tenant Reseller Design Systems */}
+        <div className="p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 backdrop-blur-xl transition-all shadow-xs hover:shadow-xl">
+          <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-950 dark:text-white mb-6">
+            <Layers className="w-6 h-6" />
           </div>
-          <h3 className="text-base font-bold text-white mb-2">
-            1. Edge Routing & Smart Caching
+          <h3 className="text-lg font-bold text-slate-950 dark:text-white mb-2 tracking-tight">
+            1. Composable Cloud Design Systems
           </h3>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            Offload repetitive reads via multi-layer caching (CDN edge, regional Redis clusters, local in-memory L1). Mitigate cache thundering herds using singleflight deduping and probabilistic early expiration.
+          <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed font-normal">
+            Decoupling component behavior from visual presentation. Token hierarchies inject dynamic branding for multi-tenant resellers and affiliates at runtime with zero JavaScript overhead.
           </p>
-          <div className="mt-4 pt-4 border-t border-white/5 text-[11px] font-mono text-cyan-400">
-            Target: &lt;10ms Edge Hits
+          <div className="mt-6 pt-4 border-t border-slate-200 dark:border-white/10 text-xs font-semibold text-slate-950 dark:text-slate-200">
+            Guarantees: WCAG AAA • Complete Whitelabeling
           </div>
         </div>
 
-        {/* Card 2: Event-Driven Decoupling */}
-        <div className="p-6 rounded-2xl bg-slate-900/60 border border-white/10 hover:border-indigo-500/40 backdrop-blur-md transition-all">
-          <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-5">
-            <Cpu className="w-5 h-5" />
+        {/* Card 2: Edge Routing & Partial Hydration */}
+        <div className="p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 backdrop-blur-xl transition-all shadow-xs hover:shadow-xl">
+          <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-950 dark:text-white mb-6">
+            <Zap className="w-6 h-6" />
           </div>
-          <h3 className="text-base font-bold text-white mb-2">
-            2. Asynchronous Event-Driven Core
+          <h3 className="text-lg font-bold text-slate-950 dark:text-white mb-2 tracking-tight">
+            2. Edge Routing &amp; Hybrid Streaming
           </h3>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            Decouple write paths with Apache Kafka and partitioned consumers. Protect upstream services with backpressure management, exponential backoff with jitter, and robust dead-letter queue (DLQ) retry patterns.
+          <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed font-normal">
+            React Server Components stream instant UI shells from the edge. Heavy data hydration is eliminated on the client, confining browser work exclusively to selective interactive islands.
           </p>
-          <div className="mt-4 pt-4 border-t border-white/5 text-[11px] font-mono text-indigo-400">
-            Guarantees: At-Least-Once Delivery
+          <div className="mt-6 pt-4 border-t border-slate-200 dark:border-white/10 text-xs font-semibold text-slate-950 dark:text-slate-200">
+            Speed: Sub-15ms TTFB • Sub-50ms INP
           </div>
         </div>
 
-        {/* Card 3: Observability & Resilience */}
-        <div className="p-6 rounded-2xl bg-slate-900/60 border border-white/10 hover:border-emerald-500/40 backdrop-blur-md transition-all">
-          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-5">
-            <ShieldCheck className="w-5 h-5" />
+        {/* Card 3: AI Leverage & Hardware Interfacing */}
+        <div className="p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 backdrop-blur-xl transition-all shadow-xs hover:shadow-xl">
+          <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-950 dark:text-white mb-6">
+            <Bot className="w-6 h-6" />
           </div>
-          <h3 className="text-base font-bold text-white mb-2">
-            3. Deep Observability & Chaos Readiness
+          <h3 className="text-lg font-bold text-slate-950 dark:text-white mb-2 tracking-tight">
+            3. AI Speed &amp; IoT Physical Telemetry
           </h3>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            Telemetry built into every request cycle: distributed tracing (OpenTelemetry), RED metrics (Rate, Errors, Duration) in Prometheus/Grafana, and automated circuit breakers (Hystrix pattern) to prevent cascading outages.
+          <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed font-normal">
+            Harnessing generative AI workflows to ship multi-platform code across Web, Mobile, and Desktop in days, complemented by maker curiosity in embedded Arduino, ESP32, and live sensor networks.
           </p>
-          <div className="mt-4 pt-4 border-t border-white/5 text-[11px] font-mono text-emerald-400">
-            Standard: 99.99% Production SLO
+          <div className="mt-6 pt-4 border-t border-slate-200 dark:border-white/10 text-xs font-semibold text-slate-950 dark:text-slate-200">
+            Reach: Web • iOS • Desktop • Physical IoT
           </div>
         </div>
       </div>

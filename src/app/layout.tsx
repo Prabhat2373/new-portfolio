@@ -3,13 +3,13 @@ import './globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
-  title: 'Prabhat Tambe | Senior Full-Stack & Systems Engineer',
-  description: 'Portfolio showcasing high-throughput backends, distributed systems, and modern web applications built for scale.',
-  keywords: ['Software Engineer', 'Full-Stack Developer', 'Distributed Systems', 'Go', 'TypeScript', 'Next.js', 'System Architecture'],
+  title: 'Prabhat Tambe | Frontend Engineer • Cloud Applications & System Architecture',
+  description: 'Frontend developer crafting cloud applications, multi-tenant architectures, zero-maintenance design systems, AI-accelerated apps, and physical IoT hardware with Apple-grade precision.',
+  keywords: ['Frontend Developer', 'Cloud Applications', 'Design Systems', 'React', 'Next.js', 'TypeScript', 'System Architecture', 'IoT', 'Arduino'],
   authors: [{ name: 'Prabhat Tambe' }],
   openGraph: {
-    title: 'Prabhat Tambe | Senior Full-Stack & Systems Engineer',
-    description: 'Portfolio showcasing high-throughput backends, distributed systems, and modern web applications built for scale.',
+    title: 'Prabhat Tambe | Frontend Engineer • Cloud Applications & System Architecture',
+    description: 'Frontend developer crafting cloud applications, multi-tenant architectures, zero-maintenance design systems, AI-accelerated apps, and physical IoT hardware with Apple-grade precision.',
     type: 'website',
   },
 };
@@ -21,14 +21,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
-      <body className="min-h-screen antialiased bg-[#090d16] text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors duration-200">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const saved = localStorage.getItem('portfolio-theme');
+                if (saved === 'light') {
+                  document.documentElement.classList.remove('dark');
+                  document.documentElement.classList.add('light');
+                } else {
+                  document.documentElement.classList.add('dark');
+                  document.documentElement.classList.remove('light');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body className="min-h-screen antialiased bg-white dark:bg-[#090d16] text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors duration-200">
         <ThemeProvider>
-          <div className="fixed inset-0 pointer-events-none z-0">
-            {/* Subtle ambient light gradient */}
-            <div className="ambient-glow absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] bg-gradient-to-b from-cyan-500/10 via-indigo-500/5 to-transparent blur-3xl opacity-60 transition-opacity" />
-            <div className="ambient-glow absolute top-[800px] right-0 w-[500px] h-[500px] bg-purple-500/5 blur-3xl rounded-full pointer-events-none transition-opacity" />
-            <div className="ambient-glow absolute bottom-[200px] left-0 w-[500px] h-[500px] bg-cyan-500/5 blur-3xl rounded-full pointer-events-none transition-opacity" />
-          </div>
+          {/* Hardware-accelerated ambient backdrop without CPU blur filters */}
+          <div
+            className="fixed inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(6,182,212,0.08),transparent_70%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(6,182,212,0.12),transparent_70%)]"
+            aria-hidden="true"
+          />
           <div className="relative z-10 flex flex-col min-h-screen">
             {children}
           </div>

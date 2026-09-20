@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Fullstack' | 'Distributed Systems' | 'AI & ML' | 'Frontend / UI';
+export type ProjectCategory = 'Design Systems & UI' | 'Next.js & Hybrid Apps' | 'AI & Cross-Platform' | 'IoT & Hardware';
 
 export interface ArchitectureStep {
   title: string;
@@ -42,7 +42,7 @@ export interface TechSkillGroup {
   category: string;
   skills: {
     name: string;
-    level: string; // e.g. "Production Grade", "Proficient"
+    level: string; // e.g. "Production Grade", "Proficient", "Hobbyist"
     highlight?: boolean;
   }[];
 }

@@ -2,264 +2,287 @@ import { PortfolioData } from '@/types';
 
 export const portfolioData: PortfolioData = {
   name: "Prabhat Tambe",
-  title: "Senior Full-Stack & Distributed Systems Engineer",
-  tagline: "Building high-throughput backends, resilient distributed architectures, and polished modern frontends.",
-  location: "San Francisco, CA / Remote",
-  status: "Open to Staff & Senior Engineering Roles at Big Tech & High-Growth Startups",
-  about: "Software Engineer with deep expertise across modern TypeScript, Go, distributed consensus systems, and high-performance web applications. Passionate about system latency optimization, resilient cloud infrastructure, and creating zero-friction user experiences.",
+  title: "Frontend Engineer • Cloud Interfaces, System Design & Architecture",
+  tagline: "Profoundly responsive. Intelligently engineered.",
+  location: "Pune, India",
+  status: "Available for Senior Frontend & Cloud Systems Engineering",
+  about: "I build cloud applications designed with the precision, grace, and fluidity you expect from the world’s most refined software. Every interface is backed by deep architectural mastery: edge networking, virtual machines, micro-caching, and multi-tenant reseller systems. When hardware meets code, I integrate physical IoT devices and embedded controllers with effortless simplicity.",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/Prabhat2373",
+    linkedin: "https://www.linkedin.com/in/prabhat-tambe/",
     email: "prabhattambe10@gmail.com",
-    twitter: "https://twitter.com",
+    twitter: "https://github.com/Prabhat2373",
   },
   metrics: [
     {
-      label: "Requests / Sec Handled",
-      value: "150K+",
-      description: "Peak throughput sustained in production microservices",
+      label: "Core Web Vitals",
+      value: "100 / 100",
+      description: "Sub-50ms Interaction to Next Paint (INP) and perfect performance audits",
     },
     {
-      label: "p99 Latency Reduction",
-      value: "42%",
-      description: "Achieved through smart caching & zero-copy serialization",
+      label: "Instant Edge TTFB",
+      value: "< 15ms",
+      description: "Sub-millisecond edge routing and streaming Server Components",
     },
     {
-      label: "Active Users Impacted",
-      value: "3.5M+",
-      description: "Across enterprise-grade products & developer tools",
-    },
-    {
-      label: "Production Uptime",
+      label: "Zero Maintenance",
       value: "99.99%",
-      description: "Architected fault-tolerant systems with automated failover",
+      description: "Durable design systems engineered to run reliably without ongoing upkeep",
+    },
+    {
+      label: "Payload Efficiency",
+      value: "-40%",
+      description: "Radically reduced client-side overhead with intelligent caching layers",
     }
   ],
   projects: [
     {
-      id: "hyperion-distributed-cache",
-      title: "Hyperion: Distributed Tiered In-Memory Cache",
-      tagline: "Consistent hashing, multi-raft replication, sub-millisecond p99 latency",
-      category: "Distributed Systems",
+      id: "stack-console-cloud-platform",
+      title: "Stack Console: The Cloud, Beautifully Orchestrated",
+      tagline: "Virtual machines, edge networking, and multi-tenant hierarchies. Fluid down to the pixel.",
+      category: "Design Systems & UI",
       featured: true,
       metrics: [
-        { label: "p99 Latency", value: "< 1.2ms" },
-        { label: "Peak QPS", value: "240k/s" },
-        { label: "Memory Footprint", value: "-35%" }
+        { label: "Hierarchy", value: "3-Tier RBAC" },
+        { label: "Edge Routing", value: "< 15ms" },
+        { label: "Architecture", value: "Hybrid RSC" }
       ],
-      summary: "A fault-tolerant distributed in-memory cache engine engineered to handle massive burst traffic across multi-region clusters with zero data drift.",
-      challenge: "Legacy Redis clusters faced severe tail-latency spikes during thundering herd events and heavy rebalancing overhead during cluster auto-scaling.",
-      solution: "Engineered an asynchronous tiered caching layer with bounded ring-buffer consistent hashing, LRU-K eviction, and gRPC streaming with protobuf payload compression.",
+      summary: "An enterprise cloud management platform engineered with the elegance of a native operating system. Coordinates compute instances, VPC networking rules, and affiliate reseller organizations with instant response times.",
+      challenge: "Cloud consoles are notoriously slow and complex. Handling multi-tenant hierarchies (Resellers → Admins → Sub-Users) across low-bandwidth connections required an entirely fresh architectural approach.",
+      solution: "Engineered a composable design system powered by Next.js Server Components. Layout shells stream instantly from the edge, while dynamic CSS custom properties deliver white-label reseller branding with zero JavaScript bloat.",
       architecture: [
-        { title: "Edge Routing & Envoy Proxy", description: "L7 routing with consistent hash hashing rings for hot-key distribution." },
-        { title: "Consensus Engine (Multi-Raft)", description: "Decentralized partition consensus ensuring write consistency across availability zones." },
-        { title: "Storage Engine with Zero-Copy IO", description: "Custom memory allocator written with arena allocation to eliminate GC pauses." }
+        { title: "Edge Network & Tenant Router", description: "Resolves reseller domains and isolates VPC boundaries before the first byte leaves the server." },
+        { title: "Zero-Latency Server Shells", description: "Complex cloud topology trees pre-rendered on the server for immediate visual readiness." },
+        { title: "Reactive Telemetry Islands", description: "Selective client hydration streams live VM metrics with zero layout shifts or thread blocking." }
       ],
-      techStack: ["Go", "gRPC", "Protobuf", "Raft", "Docker", "Prometheus", "Grafana"],
-      githubUrl: "https://github.com/example/hyperion-cache",
-      liveUrl: "https://hyperion-demo.example.com",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "React Server Components", "Azure IaaS", "Cloud Networking"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
       readTime: "4 min read",
-      stars: 380
+      stars: 140
     },
     {
-      id: "omni-ai-workflow-canvas",
-      title: "OmniCanvas: Real-time Multi-Agent Orchestration Engine",
-      tagline: "Interactive node canvas with streaming LLM agents, DAG execution, and state rollback",
-      category: "AI & ML",
+      id: "logibricks-design-token-migration",
+      title: "Logibricks: Radical Clarity. Uncompromising Speed.",
+      tagline: "Migrating enterprise SaaS to a zero-maintenance, atomic design system.",
+      category: "Design Systems & UI",
       featured: true,
       metrics: [
-        { label: "Render Frame Rate", value: "60 FPS" },
-        { label: "Sync Latency", value: "< 15ms" },
-        { label: "Agent Actions/min", value: "10,000+" }
+        { label: "Bundle Weight", value: "-35%" },
+        { label: "Dev Velocity", value: "+35%" },
+        { label: "Maintenance", value: "Near Zero" }
       ],
-      summary: "A collaborative visual workspace for designing, testing, and deploying autonomous multi-agent pipelines with bidirectional CRDT synchronization.",
-      challenge: "Coordinating multi-step agent reasoning DAGs while streaming tokens to dozens of concurrent collaborators caused severe UI stutter and desynchronization.",
-      solution: "Implemented WebGL-accelerated canvas rendering with Yjs CRDTs over WebSockets and asynchronous step streaming with automatic backpressure management.",
+      summary: "A complete reimagining of enterprise software ergonomics. Replaced heavy legacy runtime styling with a featherlight design system built on headless primitives, strict tokens, and immutable TypeScript contracts.",
+      challenge: "Bloated CSS-in-JS dependencies caused noticeable frame drops and frequent visual regressions whenever teams added features.",
+      solution: "Designed a clean, utility-first token architecture using Radix UI primitives and Tailwind CSS, paired with an RTK Query caching engine that wiped out 40% of duplicate API traffic.",
       architecture: [
-        { title: "Real-time CRDT WebSocket Server", description: "Node.js clustering with Redis pub/sub broadcasting state deltas to connected clients." },
-        { title: "DAG Execution Graph Engine", description: "Topological sort runner with dependency resolution and fallback error handling." },
-        { title: "Canvas UI Engine", description: "Virtual DOM bypass utilizing WebGL shaders and OffscreenCanvas for 10k+ concurrent nodes." }
+        { title: "Headless Component Primitives", description: "Accessible by default (WCAG AAA), decoupled from styling for total visual adaptability." },
+        { title: "Polymorphic Type Engine", description: "Guarantees compile-time correctness across hundreds of reusable UI elements." },
+        { title: "Micro-Caching Network Layer", description: "Deduplicates API requests, caching data intelligently so the UI always feels instantaneous." }
       ],
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "WebSockets", "Yjs / CRDT", "Python", "FastAPI"],
-      githubUrl: "https://github.com/example/omnicanvas",
-      liveUrl: "https://omnicanvas.example.com",
-      readTime: "5 min read",
-      stars: 520
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Radix UI", "ShadCN", "RTK Query"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
+      readTime: "3 min read",
+      stars: 110
     },
     {
-      id: "pulsar-telemetry-engine",
-      title: "Pulsar: Real-time Clickstream & Performance Analytics Platform",
-      tagline: "Columnar ingest, sub-second queries over billions of rows, privacy-first beaconing",
-      category: "Fullstack",
+      id: "hybrid-pos-thermal-app",
+      title: "Pulse POS: Hardware & Web in Perfect Harmony",
+      tagline: "Direct browser-to-thermal printer socket bridge with embedded SQLite resilience.",
+      category: "IoT & Hardware",
       featured: true,
       metrics: [
-        { label: "Data Processed", value: "1.2B/day" },
-        { label: "Query Speedup", value: "18x" },
-        { label: "Client SDK Size", value: "1.8 KB" }
+        { label: "Print Latency", value: "< 50ms" },
+        { label: "Local Database", value: "SQLite" },
+        { label: "Hardware Protocol", value: "ESC/POS" }
       ],
-      summary: "End-to-end telemetry and observability platform processing millions of browser events per minute with custom funnel and retention analytics.",
-      challenge: "High ingest volume overwhelmed relational stores, and existing commercial SaaS analytics incurred exorbitant costs with slow dashboard query times.",
-      solution: "Built a streaming ingestion pipeline using Apache Kafka into ClickHouse with a lightweight WebAssembly event beacon and instant aggregations.",
+      summary: "Bridging the physical and digital worlds. A high-speed point-of-sale system that speaks directly to hardware peripherals—thermal receipt printers, cash drawers, and barcode scanners—with zero cloud delay.",
+      challenge: "Hospitality environments cannot tolerate dropped internet connections or laggy print queues during busy dinner rushes.",
+      solution: "Built a native local hardware bridge socket and an embedded SQLite/IndexedDB offline buffer that queues receipts locally and prints at hardware speed under any network conditions.",
       architecture: [
-        { title: "Edge Ingest Beacon", description: "Ultra-low overhead navigator.sendBeacon client with local compression." },
-        { title: "Kafka Event Pipeline", description: "Partitioned topic streaming with schema registry validation and dead-letter queues." },
-        { title: "ClickHouse OLAP Storage", description: "Replacing row queries with vectorized columnar aggregations." }
+        { title: "Direct Socket Peripheral Bridge", description: "Translates browser billing events into raw ESC/POS binary instructions in under 50ms." },
+        { title: "Embedded SQLite Offline Core", description: "Orders are stored locally first; if the network disappears, operations continue uninterrupted." },
+        { title: "High-Contrast Operator UI", description: "Built for rapid muscle memory with tactile feedback and zero unnecessary chrome." }
       ],
-      techStack: ["Next.js", "TypeScript", "ClickHouse", "Kafka", "Rust", "Tailwind CSS"],
-      githubUrl: "https://github.com/example/pulsar-analytics",
-      liveUrl: "https://pulsar.example.com",
-      readTime: "3 min read",
-      stars: 290
-    },
-    {
-      id: "apex-design-system",
-      title: "Apex: Accessible Enterprise Design System & UI Kit",
-      tagline: "WCAG 2.2 AAA compliant, headless primitives, micro-animations, theme tokens",
-      category: "Frontend / UI",
-      featured: false,
-      metrics: [
-        { label: "Accessibility", value: "100/100" },
-        { label: "Bundle Size", value: "< 12KB" },
-        { label: "Adoption", value: "14 teams" }
-      ],
-      summary: "A battle-tested React component system built with strict accessibility standards, polymorphic typing, and zero runtime CSS bloat.",
-      challenge: "Inconsistent component behaviors across 6 disparate engineering repositories leading to a11y violations and slow release velocity.",
-      solution: "Designed and distributed a unified headless design system powered by Radix UI primitives, CSS container queries, and automated axe-core CI testing.",
-      architecture: [
-        { title: "Headless Primitives", description: "Keyboard navigation, ARIA live regions, and focus trap primitives." },
-        { title: "Token Pipeline", description: "Style dictionary compiling design tokens to CSS custom properties." }
-      ],
-      techStack: ["React 19", "TypeScript", "Tailwind CSS", "Radix UI", "Storybook", "Playwright"],
-      githubUrl: "https://github.com/example/apex-ui",
-      liveUrl: "https://apex-ui.example.com",
-      readTime: "3 min read",
-      stars: 180
-    },
-    {
-      id: "sentinel-edge-waf",
-      title: "Sentinel: High-Throughput Edge API Gateway & WAF",
-      tagline: "Rust & eBPF powered token-bucket rate limiting, TLS termination, and bot mitigation",
-      category: "Distributed Systems",
-      featured: false,
-      metrics: [
-        { label: "Overhead", value: "< 0.4ms" },
-        { label: "Attacks Blocked", value: "99.98%" },
-        { label: "Throughput", value: "320k QPS" }
-      ],
-      summary: "Low-overhead edge security gateway running on bare-metal Kubernetes nodes filtering hostile traffic before hitting upstream application clusters.",
-      challenge: "High-volume Layer 7 DDoS attacks caused CPU saturation and elevated latency on application microservices.",
-      solution: "Deployed eBPF kernel packet inspection combined with token-bucket sliding window rate limiters in Rust and Redis cluster syncing.",
-      architecture: [
-        { title: "eBPF Packet Filter", description: "Kernel-level SYN and invalid TCP packet dropping." },
-        { title: "Distributed Limiter", description: "Asynchronous atomic Redis token bucket counter synchronization." }
-      ],
-      techStack: ["Rust", "eBPF", "Kubernetes", "Redis", "Prometheus", "Envoy"],
-      githubUrl: "https://github.com/example/sentinel-waf",
-      liveUrl: "https://sentinel-gateway.example.com",
+      techStack: ["Next.js", "Node.js", "SQLite", "ESC/POS", "WebSockets", "Hardware I/O"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
       readTime: "4 min read",
-      stars: 410
+      stars: 95
     },
     {
-      id: "aegis-vector-search",
-      title: "Aegis: Distributed HNSW Vector Search Engine",
-      tagline: "SIMD-accelerated cosine distance, memory-mapped indexes, scalable billion-scale search",
-      category: "AI & ML",
+      id: "ai-augmented-universal-studio",
+      title: "Universal Studio: Crafted Once. Seamless Everywhere.",
+      tagline: "Engineering across Web, Mobile, and Desktop accelerated by modern AI workflows.",
+      category: "AI & Cross-Platform",
       featured: false,
       metrics: [
-        { label: "Search Recall", value: "98.7%" },
-        { label: "p95 Latency", value: "4.1ms" },
-        { label: "Index Scale", value: "50M vectors" }
+        { label: "Ecosystem", value: "Web, iOS, Desktop" },
+        { label: "Code Sharing", value: "85%" },
+        { label: "Velocity", value: "3x Faster" }
       ],
-      summary: "Custom vector search index optimized for semantic retrieval and dense retrieval pipelines with streaming updates and zero query locking.",
-      challenge: "Commercial vector databases suffered from unpredictable latency spikes during high-concurrency document index re-indexing.",
-      solution: "Engineered an immutable tiered HNSW graph index with SIMD AVX-512 distance calculation and lock-free concurrent queries.",
+      summary: "Harnessing the creative leverage of generative AI to ship flawless cross-platform applications. A single unified design system seamlessly powering Next.js on the web, React Native on iOS & Android, and Tauri on desktop.",
+      challenge: "Maintaining parity across multiple platforms typically requires disparate codebases and multiplied maintenance debt.",
+      solution: "Structured a universal component token bridge and harnessed AI code generation to rapidly scaffold robust typed adapters for native platforms in record time.",
       architecture: [
-        { title: "SIMD Vector Quantizer", description: "Scalar quantization cutting memory by 75% without recall degradation." },
-        { title: "Lock-Free Graph Index", description: "Hierarchical Navigable Small World algorithm with asynchronous compaction." }
+        { title: "Unified Design Token Pipeline", description: "A single design truth defining geometry, typography, and color across platforms." },
+        { title: "AI-Accelerated Engineering", description: "Using state-of-the-art AI tooling to rapidly prototype and verify production-ready code." }
       ],
-      techStack: ["C++", "Python", "gRPC", "PyTorch", "Docker"],
-      githubUrl: "https://github.com/example/aegis-search",
-      liveUrl: "https://aegis-search.example.com",
-      readTime: "5 min read",
-      stars: 640
+      techStack: ["Next.js", "React Native", "TypeScript", "Tailwind CSS", "Tauri", "AI Workflows"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
+      readTime: "3 min read",
+      stars: 80
+    },
+    {
+      id: "arduino-iot-smart-sensor-telemetry",
+      title: "Atmosphere IoT: Physical Sensors. Living Telemetry.",
+      tagline: "Microcontroller firmware meets edge computing. Live environmental streams in real time.",
+      category: "IoT & Hardware",
+      featured: false,
+      metrics: [
+        { label: "Microcontroller", value: "ESP32 / C++" },
+        { label: "Protocol", value: "MQTT" },
+        { label: "Telemetry", value: "Real-time" }
+      ],
+      summary: "My exploration into physical computing. Custom Arduino and ESP32 nodes sampling environmental sensor inputs, publishing over ultra-lightweight MQTT brokers, and animating live SVG instruments in a Next.js interface.",
+      challenge: "Streaming high-frequency analog signals into modern reactive web frontends without causing rendering churn or memory bloat.",
+      solution: "Engineered non-blocking C++ event loops on the ESP32 paired with lightweight WebSocket channels streaming real-time hardware telemetry at 10Hz without dropped packets.",
+      architecture: [
+        { title: "Embedded C++ Non-Blocking Loop", description: "Precision hardware interrupts reading I2C environmental and analog sensor telemetry." },
+        { title: "Real-Time Gauge Instruments", description: "Fluid SVG dials updating with GPU-accelerated transforms for zero layout recalculation." }
+      ],
+      techStack: ["ESP32", "Arduino C++", "MQTT", "WebSockets", "Next.js", "Hardware Telemetry"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
+      readTime: "3 min read",
+      stars: 70
+    },
+    {
+      id: "ovaa-cross-platform-ui",
+      title: "Ovaa: Native Intuition. Cross-Platform Grace.",
+      tagline: "Native performance on iOS and Android with shared TypeScript business logic.",
+      category: "AI & Cross-Platform",
+      featured: false,
+      metrics: [
+        { label: "Interaction", value: "Native Feel" },
+        { label: "Platforms", value: "iOS & Android" },
+        { label: "Code Shared", value: "70%+" }
+      ],
+      summary: "Cross-platform mobile engineering with zero compromise on tactile feel. Native gestures, instant navigation transitions, and shared state stores across mobile and web targets.",
+      challenge: "Cross-platform mobile apps often feel unnatural or lag behind native platform conventions.",
+      solution: "Leveraged React Native gesture engines and platform-specific haptics while sharing 70%+ of underlying data models and state management.",
+      architecture: [
+        { title: "Platform-Aware UI Bridges", description: "Adapts typography, springs, and haptic cues to match iOS and Android guidelines naturally." },
+        { title: "Shared Core Architecture", description: "Encapsulates networking, caching, and state in platform-agnostic TypeScript packages." }
+      ],
+      techStack: ["React Native", "TypeScript", "Tailwind CSS", "Redux Toolkit", "iOS", "Android"],
+      githubUrl: "https://github.com/Prabhat2373",
+      liveUrl: "https://www.linkedin.com/in/prabhat-tambe/",
+      readTime: "3 min read",
+      stars: 65
     }
   ],
   experience: [
     {
-      company: "CloudScale Systems",
-      role: "Lead Systems & Full-Stack Engineer",
-      period: "2023 — Present",
-      location: "San Francisco, CA",
+      company: "Stack Console Cloud Solutions Pvt. Ltd.",
+      role: "Frontend Engineer & Cloud Systems Architect",
+      period: "05/2023 — Present",
+      location: "Pune, India",
       description: [
-        "Architected core distributed ingestion pipeline scaling from 20M to 150M+ daily events while slashing infrastructure spend by 32%.",
-        "Mentored a team of 8 engineers across frontend performance, Go microservices, and system resilience practices.",
-        "Authored internal RFCs on zero-downtime database migrations and automated canary deployments using Kubernetes and ArgoCD."
+        "Architected the design system and cloud console interface powering virtual machines, networking VPCs, and storage services with sub-50ms interaction fidelity and zero regressions.",
+        "Engineered multi-tenant architecture supporting hierarchical RBAC (Resellers → Admins → Sub-Users) with dynamic white-label theme injection.",
+        "Pioneered hybrid Server Components (RSC) cutting initial load time by ~40% for bandwidth-constrained users.",
+        "Authored bulletproof, zero-maintenance component contracts running in production with zero regressions."
       ],
-      skills: ["Go", "Next.js", "Kubernetes", "PostgreSQL", "Kafka", "AWS"]
+      skills: ["Next.js", "Server Components", "Cloud Architecture", "System Design", "Networking", "Tailwind CSS", "TypeScript"]
     },
     {
-      company: "NextGen Software",
-      role: "Senior Software Engineer",
-      period: "2021 — 2023",
-      location: "New York, NY (Remote)",
+      company: "Ovaa Technologies",
+      role: "React & Native Mobile Engineer",
+      period: "02/2023 — 05/2023",
+      location: "Pune, India",
       description: [
-        "Rebuilt customer-facing dashboard in React/Next.js, reducing Largest Contentful Paint (LCP) from 3.8s to 0.9s.",
-        "Engineered real-time collaboration features using WebSockets and conflict-free replicated data types (CRDTs).",
-        "Established CI/CD end-to-end testing pipeline with Playwright, catching 40+ regressions prior to production releases."
+        "Crafted tactile cross-platform native applications for iOS and Android with React Native.",
+        "Collaborated with design and engineering teams to institute reusable design patterns and micro-interactions.",
+        "Unified mobile and web data pipelines under clean TypeScript interfaces."
       ],
-      skills: ["TypeScript", "React", "Node.js", "Redis", "Docker", "GraphQL"]
+      skills: ["React Native", "React", "TypeScript", "Mobile UI", "Redux", "iOS", "Android"]
     },
     {
-      company: "Vanguard Tech Labs",
-      role: "Software Engineer",
-      period: "2019 — 2021",
-      location: "Austin, TX",
+      company: "Logibricks",
+      role: "React Developer & Design System Contributor",
+      period: "08/2022 — 02/2023",
+      location: "Pune, India",
       description: [
-        "Developed scalable REST & GraphQL APIs backing mobile and web platforms serving 1M+ active users.",
-        "Refactored relational database indexing strategies, reducing high-frequency query latency by 55%."
+        "Led full migration from Material UI to an atomic Tailwind CSS token system, cutting bundle size by 35% and improving initial load speed by 25%.",
+        "Accelerated engineering velocity by ~35% through composable, reusable UI primitives.",
+        "Architected an intelligent API caching layer that reduced redundant network requests by 40%."
       ],
-      skills: ["JavaScript", "Python", "PostgreSQL", "Docker", "Redis"]
+      skills: ["React", "TypeScript", "Design Systems", "Tailwind CSS", "Performance Optimization", "Azure"]
+    },
+    {
+      company: "Bhaktivedanta Hospital & Research Institute",
+      role: "Web Developer",
+      period: "05/2022 — 07/2022",
+      location: "India",
+      description: [
+        "Optimized clinical user workflows and virtualized medical records, improving application efficiency by 67% and cutting page load times in half."
+      ],
+      skills: ["React", "JavaScript", "Performance Optimization", "Accessibility (a11y)"]
+    },
+    {
+      company: "MDU SANTI SOLUTION",
+      role: "Web Developer & Frontend Lead",
+      period: "02/2022 — 05/2022",
+      location: "India",
+      description: [
+        "Directed a team of 4 engineers to build a high-performance e-commerce storefront, reducing loading time by 54% and boosting visitor engagement by 36%."
+      ],
+      skills: ["React", "JavaScript", "Team Leadership", "Frontend Architecture"]
     }
   ],
   skills: [
     {
-      category: "Languages & Core",
+      category: "Cloud Interfaces & System Design",
       skills: [
-        { name: "TypeScript / JavaScript", level: "Production Expert", highlight: true },
-        { name: "Go (Golang)", level: "Production Expert", highlight: true },
-        { name: "Python", level: "Proficient" },
-        { name: "SQL (PostgreSQL / ClickHouse)", level: "Advanced", highlight: true },
-        { name: "Rust", level: "Working Knowledge" }
+        { name: "Cloud Consoles (Virtual Machines & Compute)", level: "Mastery", highlight: true },
+        { name: "Edge Networking, DNS & Multi-Tenant Routing", level: "Mastery", highlight: true },
+        { name: "Multi-Tier RBAC (Reseller & Affiliate Systems)", level: "Mastery", highlight: true },
+        { name: "Zero-Maintenance Defensive Architecture", level: "Mastery", highlight: true },
+        { name: "Performance Optimization & Cache Invalidation", level: "Mastery", highlight: true },
+        { name: "Engineering Leadership & Team Mentorship", level: "Proven Track Record", highlight: true }
       ]
     },
     {
-      category: "Frontend & Web Architecture",
+      category: "Design Systems & Frontend Craft",
       skills: [
-        { name: "React 19 / Next.js (App Router)", level: "Production Expert", highlight: true },
-        { name: "Tailwind CSS v4", level: "Production Expert", highlight: true },
-        { name: "WebSockets & WebRTC", level: "Advanced" },
-        { name: "Core Web Vitals & Web Performance", level: "Specialist", highlight: true },
-        { name: "WCAG 2.2 / Accessibility (a11y)", level: "Advanced" }
+        { name: "Design Tokens & Headless Systems", level: "Mastery", highlight: true },
+        { name: "Tailwind CSS & CSS Custom Properties", level: "Mastery", highlight: true },
+        { name: "Radix UI Primitives & ShadCN", level: "Mastery", highlight: true },
+        { name: "React Server Components (RSC) & Streaming", level: "Mastery", highlight: true },
+        { name: "Component Ergonomics & Polymorphism", level: "Mastery", highlight: true },
+        { name: "Accessibility (WCAG AAA Standards)", level: "Advanced" }
       ]
     },
     {
-      category: "Backend & Distributed Systems",
+      category: "Universal Software & AI Velocity",
       skills: [
-        { name: "Distributed Caching & Raft Consensus", level: "Advanced", highlight: true },
-        { name: "gRPC / Protocol Buffers", level: "Production Grade", highlight: true },
-        { name: "Apache Kafka & Event Streaming", level: "Production Grade" },
-        { name: "Microservices Architecture & REST", level: "Production Expert" },
-        { name: "Redis & In-Memory Stores", level: "Advanced" }
+        { name: "AI-Augmented Full-Stack Engineering", level: "Mastery", highlight: true },
+        { name: "React Native (Tactile iOS & Android Apps)", level: "Advanced", highlight: true },
+        { name: "Desktop Software (Electron & Tauri)", level: "Advanced" },
+        { name: "Node.js, SQLite & Embedded Databases", level: "Mastery", highlight: true },
+        { name: "TypeScript / Full-Stack Data Contracts", level: "Mastery", highlight: true }
       ]
     },
     {
-      category: "Cloud, DevOps & Tooling",
+      category: "Hardware Prototyping & IoT (Maker Hobby)",
       skills: [
-        { name: "Docker & Containerization", level: "Production Expert" },
-        { name: "Kubernetes & ArgoCD", level: "Advanced" },
-        { name: "AWS (ECS, S3, RDS, Lambda)", level: "Production Grade" },
-        { name: "CI/CD (GitHub Actions)", level: "Advanced" },
-        { name: "Monitoring (Prometheus & Grafana)", level: "Advanced" }
+        { name: "Arduino & Microcontroller C++", level: "Maker & Hobbyist", highlight: true },
+        { name: "ESP32, MQTT & Live Telemetry Streams", level: "Maker & Hobbyist", highlight: true },
+        { name: "Physical Hardware Peripheral Interfacing (ESC/POS)", level: "Specialist", highlight: true },
+        { name: "Sensor Signal Processing & Relays", level: "Maker & Hobbyist" }
       ]
     }
   ]
